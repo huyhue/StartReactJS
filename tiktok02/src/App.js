@@ -6,20 +6,30 @@ import TodoApp from './Todo'
 import './App.css'
 import { ThemeContext } from './ThemeContext'
 
-// 1. memo() => Hight order component (HOC)
-// 2. useCallback()
+// 1. memo() => Hight order component (HOC): tranh render (con) nhung TH ko can thiet
+// 2. useCallback() : chúng sẽ lưu trữ lại các hàm giữa những lần render.
 // - reference types
 // - react memo()
+
+//useMemo 
+//tranh (render) thuc hien lai nhung logic ko can thiet
 
 //useState
 // 1. Init state: 0
 // 2. Actions: Up (state + 1) / Down (state - 1)
 
-//useReducer
+//useReducer: giống useState nhưng áp dụng những TH  state phức tạp hơn
 // 1. Init state: 0
 // 2. Actions: Up (state + 1) / Down (state - 1)
 // 3. Reducer
 // 4. Dispatch
+
+//Context: gửi từ ông đến cháu luôn (không đi qua trung gian)
+// A => B => C
+
+// 1. Create Context
+// 2. Provider
+// 3. Cosumer
 
 
 //init state

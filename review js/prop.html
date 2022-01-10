@@ -15,7 +15,8 @@
 
         //PostItem.js
         function PostItem(props) {
-            // console.log(props);
+            console.log(props);
+
             if(typeof props.callback === 'function')
                 props.callback(Math.random())
             return (
@@ -44,12 +45,12 @@
                     <PostItem
                         title="ABC1"
                         descriptoion="ok"
-                        publishedAt="5 phut truoc"
+                        publishedAt="6 phut truoc"
                     />
                     <PostItem
                         title="ABC2"
                         descriptoion="ok"
-                        publishedAt="5 phut truoc"
+                        publishedAt="7 phut truoc"
                     />
                 </div>
             )

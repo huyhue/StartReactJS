@@ -4,6 +4,7 @@ import video1 from './video/video-1.mp4'
 function Video(props, ref) {
     const videoRef = useRef()
 
+    //Bảo mật hơn, componet cha không thể sử dụng trong con.
     useImperativeHandle(ref, () => ({
         play() {
             videoRef.current.play()

@@ -13,8 +13,11 @@ import Contact from './pages/Contact'
 import News from './pages/News'
 
 function App() {
+  //Global State with Context + useReducer: các component khác có thể truy cập được
   const [state, dispatch] = useStore()
+
   const { todos, todoInput } = state
+  //Lấy DOM ở Video con từ cha
   const videoRef = useRef()
 
   const handleAdd = () => {
@@ -58,6 +61,7 @@ function App() {
 
       <GlobalStyles>
       <Button primary/>
+      <Button/>
         <Heading/>
         <Paragragh/>
       </GlobalStyles>

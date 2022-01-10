@@ -25,9 +25,9 @@
         // React -> React DOM
         // React.createElement(type, props, children, n)
         const h1React = React.createElement('h1', {
-            title: 'Hello',
+            title: 'Hello ',
             className: 'heading'
-        }, 'Hello Guys!')
+        }, 'Hello Guys React!')
 
         console.dir(h1DOM);
         console.log(h1React);
@@ -55,9 +55,10 @@
             React.createElement('li', {id: 'li-1'}, 'Javascript F8'),
             React.createElement('li', null, 'ReactJS F8'),
             )
-            console.log(ulReact);
 
-            ReactDOM.render(ulReact, document.getElementById('root'))
+        console.log(ulReact);
+
+        ReactDOM.render(ulReact, document.getElementById('root'))
         </script>
 </body>
 </html>

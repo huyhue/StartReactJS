@@ -73,7 +73,9 @@ function App() {
     console.log({id: checked2})
   }
 
+  console.log(checked2)
   const handleCheck = (id) => {
+    // setChecked2(prev => [...checked2, id])
     setChecked2(prev => {
       const isChecked = checked2.includes(id)
       if(isChecked){
@@ -97,13 +99,15 @@ function App() {
     console.log(storageJobs);
     return storageJobs ?? []
   })
-  // const [jobs, setJobs] = useState([])
+
   const handleTodo = () => {
     setJobs(prev => {
       const newJobs = [...prev, job]
 
       //Save to local storage
       const jsonJobs = JSON.stringify(newJobs)
+      // console.log(newJobs)
+      // console.log(jsonJobs)
       localStorage.setItem('jobs', jsonJobs)
       return newJobs
     })
@@ -123,8 +127,10 @@ function App() {
 
         <h1>{counter}</h1>
         <button onClick={handleIncrease}>Increase</button>
+
         <h1>{JSON.stringify(info)}</h1>
         <button onClick={handleUpdate}>Update</button>
+
         <h1>{gift || 'Chua co phan thuong'}</h1>
         <button onClick={randomGift}>Lay thuong</button><br></br>
 
@@ -132,6 +138,7 @@ function App() {
         <input value={email} onChange={e => setEmail(e.target.value)}/>
         <button onClick={() => setName('Nguyen van BBB')}>Change</button>
         <button onClick={handleSubmit}>Register</button><br></br>
+
 
         {courses.map(course => (
           <div key={course.id}>
@@ -144,6 +151,7 @@ function App() {
           </div>
         ))}
         <button onClick={handleSubmit1}>Register1</button><br></br>
+
 
         {courses.map(course => (
           <div key={course.id}>

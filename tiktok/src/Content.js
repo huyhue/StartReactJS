@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-//1. useEffect(callback)
+// 1. useEffect(callback)
 // goi callback moi khi componet re render
 // goi callback moi khi componet them element vao DOM
-//2. useEffect(callback, [])
+// 2. useEffect(callback, [])
 // Chi goi callback 1 lan sau khi component mounted
 //3. useEffect(callback, [deps])
 // Callback se duoc goi lai moi khi deps thay doi

@@ -265,7 +265,7 @@
             }
 
             return (
-              <Component1 {...props} >{title}</Component1>
+              <Component1 {...props}> {title} </Component1>
             )
         }
 
@@ -279,7 +279,7 @@
 
         function App({title, content}){
 
-            //useCallback
+            // UseCallback
             const handleClick = (course) => {
               console.log(course.title)
             }
@@ -295,7 +295,7 @@
                   <Component/>
                   <List data={cars}/>
                   <Input 
-                        label="Full name"
+                        label="Full Name "
                         type="text"
                         placeholder="Enter name ..."
                         title="Day la input"
@@ -305,7 +305,7 @@
                   />
                   
                     <Button 
-                        href="fullstack.edu.vn"
+                        // href="fullstack.edu.vn"
                         title="Click me!"
                         onClick={() => console.log(Math.random())}
                         >
@@ -313,6 +313,7 @@
                     </Button>
                     {firstAccess && <h1>Welcome to F</h1>}
                     <h1>{content || 'Gia tri mac dinh'}</h1>
+
                     {courses.map(course => (
                         <CourseItem 
                             key={course.id}
@@ -320,6 +321,7 @@
                             onClick={handleClick}
                             />
                     ))}
+                    
                 </div>
             )
         }
